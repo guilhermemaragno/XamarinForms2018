@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:page="clr-namespace:App05_ControleXF"
+             x:Class="App05_ControleXF.Menu.Master">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <ScrollView>
+
+                <StackLayout>
+                    <Button Text="Activity Indicator" Clicked="GoToActivityIndicatorPage"/>
+
+                    <Button Text="Progress Bar" Clicked="GoToProgressBarPage" />
+
+                    <Button Text="Box View" Clicked="GoToBoxViewPage" />
+
+                    <Button Text="Label" Clicked="GoToLabelPage" />
+
+                    <Button Text="Button" Clicked="GoToButtonPage" />
+
+                    <Button Text="Entry/Editor" Clicked="GoToEntryEditorPage" />
+
+                    <Button Text="Date Picker" Clicked="GoToDatePickerPage" />
+
+                    <Button Text="Time Picker" Clicked="GoToTimePickerPage" />
+
+                    <Button Text="Picker" Clicked="GoToPickerPage" />
+
+                    <Button Text="Search Bar" Clicked="GoToSearchBarPage" />
+
+                    <Button Text="Slider/Stepper" Clicked="GoToSliderStepperPage" />
+
+                    <Button Text="Switch" Clicked="GoToSwitchPage" />
+
+                    <Button Text="Image" Clicked="GoToImagePage" />
+
+                    <Button Text="ListView" Clicked="GoToListViewPage" />
+
+                    <Button Text="TableView" Clicked="GoToTableViewPage" />
+
+                    <Button Text="WebView" Clicked="GoToWebViewPage" />
+                </StackLayout>
+                
+            </ScrollView>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <page:MainPage />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>
